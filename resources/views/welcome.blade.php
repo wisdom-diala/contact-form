@@ -66,6 +66,7 @@
                         $("#btn").attr('disabled', false);
                         let success = '<span class="alert alert-success">'+response.msg+'</span>';
                         $("#res").html(success);
+                        document.getElementById("contact-frm").reset(); /*It's a good option for the UX when the contact form have success*/
                     }
                 });
                 
